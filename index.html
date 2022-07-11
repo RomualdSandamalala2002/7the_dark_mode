@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>7the_dark_mode</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: 0.2s;
+            font-family: sans-serif;
+        }
+
+        input[type=checkbox] {
+            appearance: none;
+            border-radius: 10%;
+            border: solid #2c2c2c 12px;
+            transition: 0.2s;
+            width: 55px;
+            height: 55px;
+            position: relative;
+            top: 4px;
+            margin-right: 10px;
+        }
+
+        .dark{
+            background-color: #2c2c2c;
+        }
+
+        .dark-content{
+            color: white;
+        }
+
+        input[type=checkbox]:checked {
+            border: solid white 24px;
+        }
+        label{
+            user-select: none;
+            font-size: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="setter">
+        <input type="checkbox" name="checkbox" id="checkbox"><label id="label" for="checkbox">Light mode</label>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
